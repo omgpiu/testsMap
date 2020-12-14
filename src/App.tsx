@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+
+const names = ['sasha', 'masha', 'dasha', 'pasha', 'glasha']
+const friends = [{
+    name: 'sasha',
+    age: 10
+}, {
+    name: 'masha',
+    age: 11
+}, {
+    name: 'dasha',
+    age: 14
+}, {
+    name: 'valera',
+    age: 17
+}, {
+    name: 'vasilii',
+    age: 20
+},
+]
+const elemets = names.map(e => <li key={e + e}>{e}</li>)
+const users = friends.map(u => <li>{u.name} {u.age}</li>)
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            {elemets}
+            <hr/>
+            {users}
+        </div>
+    );
 }
 
 export default App;
