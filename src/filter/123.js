@@ -2,8 +2,7 @@ function sum(numbers) {
     if (numbers.lenght > 1) {
         const reducer = (acc, val) => acc + val
         return numbers.reduce(reducer)
-    }else
-    if (numbers.lenght === 1) {
+    } else if (numbers.lenght === 1) {
         return numbers[0]
 
     } else {

@@ -18,7 +18,7 @@ export type DepartmentsType = {
 
 }
 
- type WorkerType = {
+type WorkerType = {
     name: string
     age: number
     salary: number
